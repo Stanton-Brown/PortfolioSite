@@ -6,15 +6,39 @@
         </title>
         <meta name="viewport" content="width=device-width, 
         intial-scale=1, maximum-scale=1, minimum-scale=1" />
-        
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
         <link rel="stylesheet" type="text/css" href="default.css">
     </head>
     <body>
-        <button class="tablink" onclick="openPage('Home', this, 'red')" id = "defaultOpen">Home</button>
-        <button class="tablink" onclick="openPage('News', this, 'green')">News</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+        <button class="tablink" onclick="openPage('Home', this, '#5F7470')" id = "defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('News', this, '#889696')">News</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#B8BDB5')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, '#D2D4C8')">About</button>
+        <div class="icon-bar">
+            <a href="#" class="facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="linkedin">
+              <div class="tooltip">linkedin</div>
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </div>
 
+
+          
         <div id="Home" class="tabcontent">
             <h3>Home</h3>
             <p>Home is where the heart is..</p>
@@ -34,6 +58,9 @@
             <h3>About</h3>
             <p>Who we are and what we do.</p>
         </div>
+
+        
+
         <script type="text/javascript" src="js/java-test.js"></script>
     </body>
 </html>

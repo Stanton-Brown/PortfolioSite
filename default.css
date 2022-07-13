@@ -2,19 +2,69 @@
 body, html {
     height: 100%;
     margin: 0;
+    background-color: transparent;
     font-family: Arial;
   }
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: none;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .instagram {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .github {
+    background: #007bb5;
+    color: white;
+  }
+  
   
   /* Style tab links */
   .tablink {
-    background-color: black;
+    background-color: #000807;
     color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 18px;
     width: 25%;
   }
   
@@ -28,7 +78,6 @@ body, html {
     display: none;
     padding: 100px 20px;
     height: 100%;
-    animation: forwards;
   }
 
   @keyframes fadeEffect {
@@ -36,7 +85,7 @@ body, html {
     to {opacity: 1;}
   }
   
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+  #Home {background-color: #5F7470;}
+  #News {background-color: #889696;}
+  #Contact {background-color: #B8BDB5;}
+  #About {background-color: #D2D4C8;}
