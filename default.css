@@ -41,34 +41,21 @@ body, html {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-   .facebook:hover,
-   .facebook:hover .tooltip,
-   .facebook:hover .tooltip::before {
-    background-color: #3b5999;
-    color: #ffffff;
-  }
-   .twitter:hover,
-   .twitter:hover .tooltip,
-   .twitter:hover .tooltip::before {
+
+   .twitter:hover {
     background-color: #46c1f6;
     color: #ffffff;
   }
-   .instagram:hover,
-   .instagram:hover .tooltip,
-   .instagram:hover .tooltip::before {
+   .instagram:hover{
     background-color: #e1306c;
     color: #ffffff;
 
   }
-   .github:hover,
-   .github:hover .tooltip,
-   .github:hover .tooltip::before {
+   .github:hover{
     background-color: #333333;
     color: #ffffff;
   }
-  .linkedin:hover,
-  .linkedin:hover .tooltip,
-  .linkedin:hover .tooltip::before {
+  .linkedin:hover{
    background-color: #0072b1;
    color: #ffffff;
  }
