@@ -5,6 +5,8 @@ body, html {
     background-color: transparent;
     font-family: Arial;
   }
+
+
   .icon-bar {
     position: fixed;
     top: 50%;
@@ -24,36 +26,52 @@ body, html {
   }
   
   /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
-    background-color: #000;
-  }
-  
-  .facebook {
-    background: none;
-    color: white;
-  }
-  
-  .twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .instagram {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  
-  .linkedin {
-    background: #007bb5;
-    color: white;
+  .tooltip {
+    position: absolute;
+    top: 50;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .github {
-    background: #007bb5;
-    color: white;
+   .facebook:hover,
+   .facebook:hover .tooltip,
+   .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
   }
-  
+   .twitter:hover,
+   .twitter:hover .tooltip,
+   .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+   .instagram:hover,
+   .instagram:hover .tooltip,
+   .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+
+  }
+   .github:hover,
+   .github:hover .tooltip,
+   .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .linkedin:hover,
+  .linkedin:hover .tooltip,
+  .linkedin:hover .tooltip::before {
+   background-color: #0072b1;
+   color: #ffffff;
+ }
   
   /* Style tab links */
   .tablink {
