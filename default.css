@@ -25,23 +25,6 @@ body, html {
     font-size: 20px;
   }
   
-  /* Style the social media icons with color, if you want */
-  .tooltip {
-    position: absolute;
-    top: 50;
-    line-height: 1.5;
-    font-size: 14px;
-    background-color: #ffffff;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-
    .twitter:hover {
     background-color: #46c1f6;
     color: #ffffff;
