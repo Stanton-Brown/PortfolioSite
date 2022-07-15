@@ -6,7 +6,6 @@ body, html {
     font-family: Arial;
   }
 
-
   .icon-bar {
     position: fixed;
     top: 50%;
@@ -42,11 +41,47 @@ body, html {
    background-color: #0072b1;
    color: #ffffff;
  }
-  
+
   /* Style tab links */
-  .tablink {
-    background-color: #000807;
-    color: white;
+  #defaultOpen {
+    background-color: #5F7470;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    width: 25%;
+  }
+
+  #newsBut {
+    background-color: #889696;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    width: 25%;
+  }
+
+  #contactBut {
+    background-color: #B8BDB5;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    width: 25%;
+  }
+
+  #aboutBut {
+    background-color: #D2D4C8;
+    color: rgb(0, 0, 0);
     float: left;
     border: none;
     outline: none;
@@ -56,15 +91,11 @@ body, html {
     width: 25%;
   }
   
-  .tablink:hover {
-    background-color: #777;
-  }
-  
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
     color: white;
     display: none;
-    padding: 100px 20px;
+    padding: 100px 50px;
     height: 100%;
   }
 
