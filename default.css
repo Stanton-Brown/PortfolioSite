@@ -2,46 +2,15 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: transparent;
-    font-family: Arial;
+    background-color: black;
+    font-family: fantasy;
   }
 
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  .tablink{
+    position: relative;
+    z-index: 10;
+    font-family: "Monaco", monospace;
   }
-  
-  /* Style the icon bar links */
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: black;
-    font-size: 20px;
-  }
-  
-   .twitter:hover {
-    background-color: #46c1f6;
-    color: #ffffff;
-  }
-   .instagram:hover{
-    background-color: #e1306c;
-    color: #ffffff;
-
-  }
-   .github:hover{
-    background-color: #333333;
-    color: #ffffff;
-  }
-  .linkedin:hover{
-   background-color: #0072b1;
-   color: #ffffff;
- }
-
   /* Style tab links */
   #defaultOpen {
     background-color: #5F7470;
@@ -55,7 +24,7 @@ body, html {
     width: 25%;
   }
 
-  #newsBut {
+  #projectsBut {
     background-color: #889696;
     color: rgb(0, 0, 0);
     float: left;
@@ -90,21 +59,132 @@ body, html {
     font-size: 18px;
     width: 25%;
   }
-  
-  /* Style the tab content (and add height:100% for full page content) */
+
   .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 50px;
+    padding: 100px 0px;
     height: 100%;
+    animation-name: slideDown;
+    animation-duration: 2s;
+  }
+
+  #Contact h3{
+    text-align: center;
+  }
+
+  .contactBox{
+    width: 500px;
+    background-color: #889696;
+    border-color: black;
+    border: 3px solid;
+    border-radius: 3pc;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: fadeEffect;
+    animation-duration: 2s;
+
+  }
+
+  form{
+    margin: 35px;
+  }
+  
+  .inputField{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 3px solid;
+  }
+
+  .textArea-field{
+    height: 150px;
+    padding-top: 10px;
+  }
+
+  .submitBut{
+    width: 100%;
+    border-radius: 20px;
+    color: black;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #D2D4C8;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .submitBut:hover{
+    background-color: white;
+  }
+
+  .icon-bar{
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+  }
+
+  /* Style the icon bar links */
+  .icon-bar a {
+    display:block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.5s ease;
+    color: black;
+    font-size: 20px;
+  }
+  
+   .twitter:hover {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+   .instagram:hover{
+    background-color: #e1306c;
+    color: #ffffff;
+
+  }
+   .github:hover{
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .linkedin:hover{
+   background-color: #0072b1;
+   color: #ffffff;
   }
 
   @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
   }
-  
+
+  @keyframes slideDown{
+    from {
+      opacity: 0;
+      height:0%;
+      width: 100%;
+    }
+    to {
+      opacity: 1;
+      height: 100%;
+      width: 100%
+    }
+    
+  }
+
+  @keyframes slideRight{
+    from {
+      width: 0%;
+    }
+    to {
+      width: 50%;
+    }
+  }
+
   #Home {background-color: #5F7470;}
-  #News {background-color: #889696;}
+  #projects {background-color: #889696;}
   #Contact {background-color: #B8BDB5;}
   #About {background-color: #D2D4C8;}

@@ -8,26 +8,46 @@
         intial-scale=1, maximum-scale=1, minimum-scale=1" />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
         <link rel="stylesheet" type="text/css" href="default.css">
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("Mx7k6925Uou99_gWt");
+            })();
+</script>       
     </head>
     <body>
         <button class="tablink" onclick="openPage('Home', this, '#5F7470')" id = "defaultOpen">Home</button>
-        <button class="tablink" onclick="openPage('News', this, '#889696')" id ="newsBut">News</button>
+        <button class="tablink" onclick="openPage('projects', this, '#889696')" id ="projectsBut">Projects</button>
         <button class="tablink" onclick="openPage('Contact', this, '#B8BDB5')" id ="contactBut">Contact</button>
         <button class="tablink" onclick="openPage('About', this, '#D2D4C8')"id ="aboutBut">About</button>
-        
+
         <div id="Home" class="tabcontent">
             <h3>Home</h3>
             <p>Home bound..</p>
         </div>
 
-        <div id="News" class="tabcontent">
-            <h3>News</h3>
-            <p>Some news this fine day!</p>
+        <div id="projects" class="tabcontent">
+            <h3>Projects</h3>
+            <p>Some projects this fine day!</p>
         </div>
 
         <div id="Contact" class="tabcontent">
             <h3>Contact</h3>
-            <p>Get in touch.</p>
+            <div class="contactBox">
+                <form>
+                    <input type="text" class="inputField" id="name" placeholder="Full Name" required>
+                    <input type="text" class="inputField" id="email_id" placeholder="Email Address" required>
+                    <input type="text" class="inputField" id="subject" placeholder="Subject" required>
+                    <textarea type="text" class="inputField textArea-field" id="message" placeholder="Your Message" required>
+                    </textarea>
+                    <button type="button" class="submitBut" onclick="sendEmail()">
+                        Submit
+                    </button>
+                </form>
+            </div>
         </div>
 
         <div id="About" class="tabcontent">
@@ -35,7 +55,7 @@
             <p>Who we are and what we do.</p>
         </div>
 
-        <div class="icon-bar">
+        <div class="icon-bar" id="left">
             <a href="https://github.com/Stanton-Brown" target="_blank" class="github">
                 <span><i class="fab fa-github"></i></span>
               </a>
@@ -53,4 +73,6 @@
 
         <script type="text/javascript" src="js/java-test.js"></script>
     </body>
+
+    
 </html>

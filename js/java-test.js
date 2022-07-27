@@ -1,3 +1,4 @@
+
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
@@ -17,6 +18,20 @@ function openPage(pageName, elmnt, color) {
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
+}
+
+function sendEmail(name, email, subject, message){
+  var params = {
+    name: document.getElementById("name").value,
+    email_id: document.getElementById("email_id").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_3tu703y", "template_os5s4di", params).then(function(res){
+    alert("Success!" + res.status);
+  })
+
 }
 
 // Get the element with id="defaultOpen" and click on it
